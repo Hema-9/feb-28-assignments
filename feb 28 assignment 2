@@ -1,0 +1,17 @@
+code:
+def nonrepeat(x,n):
+    for i in range(n):
+       j = 0
+       while(j<n):
+          if(i!=j and x[i]):
+             break
+          j+=1
+       if(j==n):
+          return x[i]
+    return -1    
+x=[1,2,1,3,2,4,2,5,4,6,5,7,6,4]
+n=len(x)
+print(nonrepeat(x,n))
+    
+    
+    
